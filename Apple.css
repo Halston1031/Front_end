@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+ul{
+    padding-left: 300px;
+
+    display: flex;
+}
+ul > li{
+    list-style-type: none;
+    padding: 20px;
+}
+ul > li a{
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+}
+.global_whole_nav{
+    text-align: center;
+}
+.global_nav{
+    border-bottom: solid rgb(210, 210, 215);
+    opacity: 0.8;
+}
+.global_nav h3 a{
+    color: #000;
+    text-decoration: none;
+}
+.global_nav a{
+    padding-left: 300px;
+}
+.nav_buttom p{
+    margin: 20px 50px;
+    background-color: rgb(245, 245, 247);
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
