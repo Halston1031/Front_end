@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momom demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .huge_box{
+            display: flex;
+        }
+        .box{
+            display: block;
+            padding: 0 10px;
+        }
+        .inside_top
+        {
+            display: flex;
+            background-color: rgb(248, 179, 102);     
+        }
+        .inside_buttom{
+            background-color: rgb(254, 235, 234);
+        }
+        .inside_buttom .left, .inside_buttom .right {
+            width: 50%; 
+            height: max-content;
+        }
+        .inside_buttom .left {
+            background-color: rgb(254, 235, 234);
+            float: left;
+        }
+        .inside_buttom .right {
+            background-color: rgb(254, 235, 234);
+            float: right;
+        }
+        img {
+            padding-left: 40px;
+            padding-top:24px;
+            padding-bottom: 20px;
+        }
+        .inside_buttom p{
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="huge_box">
+        <div class="box">
+            <div class="inside_top">
+                <i class="bi bi-credit-card"></i>
+                <h3>銀行優惠</h3>
+            </div>
+            <div class="inside_buttom">
+                <p></p>
+                <p>Lorem ipsum dolor sit, amet consectetur.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="inside_top">
+                <i class="bi bi-credit-card"></i>
+                <h3>Momo 富邦卡</h3>
+            </div>
+            <div class="inside_buttom">
+                <div class="left">
+                    <p>Lorem ipsum dolor sit, ametore.</p>
+                </div>
+                <div class="right">
+                    <img src="http://fakeimg.pl/30x20/20/">
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="inside_top">
+                <i class="bi bi-credit-card"></i>
+                <h3>影音購物</h3>
+            </div>
+            <div class="inside_buttom">
+                <div class="right">
+                    <img src="http://fakeimg.pl/30x20/30/">
+                </div>
+                <div class="left">
+                    <p>Lorem ipsum dolor sit, velto. Inventore.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="inside_top">
+                <i class="bi bi-credit-card"></i>
+                <h3>電視購物現折100</h3>
+            </div>
+            <div class="inside_buttom">
+                <div class="right">
+                    <img src="http://fakeimg.pl/30x20/20/">
+                </div>
+                <div class="left">
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
