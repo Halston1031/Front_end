@@ -5,11 +5,12 @@ body{
     background-color: rgb(218, 233, 245);
 }
 .first_nav{
+    height: 120px;
     justify-content: flex-end;
     flex-direction: row;
     margin: 10px 0;
     width: 100%;
-    text-align: left;
+    text-align: right;
     padding: 0;
 }
 .first_nav a{

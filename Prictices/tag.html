@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card{
+        position: absolute;
+        padding-left: 10px;
+    }
+    .text{
+        width: 100px;
+        position: relative;
+        background-color: pink;
+    }
+    .text::after{
+        content: '';
+        position: absolute;
+        left:0;
+        top:100%;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-top: 5px solid #f60;
+    }
+    .arrow{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        margin: 30px;
+        background-image: linear-gradient(to right top, #0000 50%, green 50%);
+    }
+</style>
+<body>
+    <div class="card">
+        <img src="https://picsum.photos/550/430">
+    </div>
+    <div class="text">
+        金魚嚴選
+    </div>
+    <div class="arrow"></div>
+</body>
+</html>

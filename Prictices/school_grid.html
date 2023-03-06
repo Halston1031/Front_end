@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 960px;
+            margin: auto;
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+        }
+        .item{
+            font-size: 20px;
+            width: 700px;
+            height: 200px;
+            display: flex;
+        }
+        .item .text{
+           width: 66.6666%;
+           padding: 20px 20px 0;
+           box-sizing: border-box;
+           display: flex;
+           flex-direction: column;
+        }
+        .item .text p{
+            flex-grow: 1;
+        }
+        .item .pic{
+            width: 33.3333%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .item .pic img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .item h3{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet officia iusto a, dolor optio obcaecati, tempore quia</p>
+                <h3>Halston</h3>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/300/330">
+            </div>
+        </div>
+        <div class="item">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet officia iusto a, dolor optio obcaecati, tempore quia</p>
+                <h3>Halston</h3>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/300/330">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
