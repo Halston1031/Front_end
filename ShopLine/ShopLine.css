@@ -1,0 +1,125 @@
+body{
+    font-family: 'sans-serif', 'Times New Roman', serif;
+}
+.navbar{
+    background-color: rgb(218, 233, 245);
+}
+.first_nav{
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+.first_nav a{
+    color: rgb(1, 35, 88);
+    text-decoration: none;
+    list-style-type: none;
+}
+ul{
+    display: flex;
+}
+ul > li{
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0 25px;
+}
+ul > li a{
+    font-size: 16px;
+    color: rgb(1, 35, 88);
+    text-decoration: none;
+}
+.first_row
+{
+    background-color: rgb(218, 233, 245);
+    height: 600px;
+    width: 100%;
+}
+section{
+    padding-top: 50px;
+    display: block;
+}
+.non{
+    background-image: linear-gradient(to bottom, #fff, rgb(218, 233, 245));
+}
+.sort ul{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-lg:nth-child(even){
+    flex-direction:row-reverse;
+}
+.second_row{
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    color: rgb(1, 35, 88);
+    height: 150px;
+}
+.third_row{
+    color: rgb(1, 35, 88);
+}
+.huge_box{
+    margin: 10px;
+    width: 1200px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.col {
+    padding-top: 30px;
+    text-align: center;
+    background-color: rgb(218, 233, 245);
+}
+.box{
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+}
+.boxx{
+    padding-left: 30px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.fifth_row{
+   padding: 30px;
+    background-color: #fff;
+}
+.sixth_row{
+    background-color: rgb(218, 233, 245);
+    height: 150px;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(218, 233, 245);
+    position:fixed;
+}
+.final{
+    background-color: rgb(0, 18, 47);
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+}
+.others{
+    padding-left:35px;
+    display: flex;
+    border-top: solid #fff;
+    width: 1200px;
+    vertical-align:middle;
+}
+.cols ul{
+     display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.contact{
+    background-color: rgb(0, 18, 47);
+    border-top: solid #fff;
+    text-align: start;
+    color: #fff;
+}
