@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ /*父層 不可 取子層自定義屬性*/
+            --boxWH: 300px; /* -- 自定義屬性*/
+        }
+        .box{ /*子層 可 取父層自定義屬性*/
+            width: var(--boxWH);
+            height: var(--boxWH);
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

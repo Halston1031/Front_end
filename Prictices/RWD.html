@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .main-header{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #a6bad1;
+            padding: 6px;
+        }
+        .logo{
+            margin: 5px;
+            height: 40px;
+            width: 80px;
+        }
+        .logo img{
+            vertical-align: top;
+        }
+        .main-nav a{
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+        #menu-switch{
+            display: none;
+        }
+        @media screen and (width < 768px){
+            .main-nav a + a{
+                border-top: none;
+            }
+            .hb{
+                width: 40px;
+                height: 40px;
+                background-color: pink;
+                border-radius: 14px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            .hb span{
+                margin-bottom: 5px;
+                width: 40%;
+                height: 2px;
+                background-color: #fff;
+            }
+            .main-nav a + a{
+                border-top: 1px solid #fff;
+            }
+            .main-nav a{
+                display: block;
+            }
+            #menu-switch:checked ~ .main-header .main-nav{
+                display: block;
+            }
+            .main-nav{
+                display: none;
+                position: absolute;
+                background-color: pink;
+                left:0;
+                top: 100%;
+                width: 90%;
+                padding: 6px;
+            }
+        }
+        @media screen and (width >= 768px){
+            .hb{
+                display: none;
+            }
+            .main-nav{
+                display: flex;
+            }
+            .main-nav a + a{
+                border-left: 1px solid #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-switch">
+    <div class="main-header">
+        <div class="logo">
+            <a href="#">
+                <img src="https://picsum.photos/80/40">
+            </a>
+        </div>
+
+        <label for="menu-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="main-nav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+    </div>
+</body>
+</html>

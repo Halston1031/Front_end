@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 100%;
+            margin: auto;
+            background-color: pink;
+        }
+        .item{
+            margin: 10px;
+            height: 100px;
+            width: auto;
+            background-color: blanchedalmond;
+        }
+        /* @media 裝置類型 and (條件1) and (條件2) and (條件3)...{} */
+        @media screen and (width >= 768px){
+            .wrap{
+                background-color: #79abe3;
+                max-width: 1200px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .item{
+                width: calc(100% /6 - 20px); /*Not common in use*/
+                /* flex-grow: 1; 用来“瓜分”父項的“剩餘空間”。 */
+            }
+        }
+        /* @media screen and (width >= 1024px){
+            .box{
+                background-color: rgb(103, 106, 219);
+            }
+        } */
+        /* @media screen and (width >= 1200px){
+            .box{
+                background-color: rgb(117, 203, 157);
+            }
+        }
+         */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        
+    </div>
+   
+</body>
+</html>
